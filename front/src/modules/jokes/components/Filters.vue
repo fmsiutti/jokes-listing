@@ -11,7 +11,7 @@
 
 <script>
 
-  import FilterButton from '@/modules/jokes/components/FilterButton.vue'
+  import FilterButton from './FilterButton.vue'
 
   export default {
     name: 'Filter',

@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import JokesRoutes from '@/modules/jokes/routes/routes'
-import HomeRoutes from '@/modules/home/routes/routes'
-import store from '@/store'
+import JokesRoutes from '../modules/jokes/routes/routes'
+import HomeRoutes from '../modules/home/routes/routes'
+import store from '../store'
 
 const router = createRouter({
     history: createWebHistory(),

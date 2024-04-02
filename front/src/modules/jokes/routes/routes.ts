@@ -1,4 +1,4 @@
-import Jokes from '@/modules/jokes/views/Jokes.vue'
+import Jokes from '../views/Jokes.vue'
 
 export default [
     {
