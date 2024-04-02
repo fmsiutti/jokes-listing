@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  api:
+  #   env_file: "./back/.env"
+    build:
+      context: ./api
+    ports:
+      - "3005:3005"
+    expose:
+      - 3005
+    networks:
+      - testNetwork
+  frontend:
+    depends_on:
+      - api
+    build:
+      context: ./front
+    ports:
+      - "5173:5173"
+    expose:
+      - 5173
+    networks:
+      - testNetwork
+networks:  
+    testNetwork:
