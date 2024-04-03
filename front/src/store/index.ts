@@ -16,8 +16,8 @@ const store = createStore({
     plugins: [vuexLocal.plugin],
 })
 
-store.registerModule("Global", GlobalStore)
-store.registerModule("Home", HomeStore)
-store.registerModule("Jokes", JokesStore)
+store.registerModule("GlobalStore", GlobalStore)
+store.registerModule("HomeStore", HomeStore)
+store.registerModule("JokesStore", JokesStore)
 
 export default store

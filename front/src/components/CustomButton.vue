@@ -19,7 +19,7 @@
         name: 'CustomButton',
         props: {
             type: {type: String, required: true},
-            circle: {type: Boolean, required: true},
+            circle: {type: Boolean, required: false, default: false},
             size: {type: String, required: false, default: "lg"}
         },
         computed: {
