@@ -2,7 +2,7 @@
     <div class="flex justify-between w-full border-b border-light dark:bg-primary dark:border-lighter transition-colors ease-linear duration-100">
         <div>
             <router-link class="h-16 w-28 flex items-center ease-linear duration-100 pl-6 font-medium hover:text-main text-primary dark:text-white" to="/">
-                <img width="70px" src="../assets/logo.svg" />
+                <MainLogo />
             </router-link>
         </div>
         <button @click="toggleNavbar"  class="px-4 sm:hidden"><MaterialIcon class="text-3xl text-primary dark:text-white" icon="menu" /></button>
@@ -35,11 +35,13 @@
 <script>
     
     import MaterialIcon from '@/components/MaterialIcon.vue';
+    import MainLogo from '@/components/MainLogo.vue';
 
     export default {
         name: 'NavBar',
         components: {
-            MaterialIcon
+            MaterialIcon,
+            MainLogo
         },
         data() {
             return {

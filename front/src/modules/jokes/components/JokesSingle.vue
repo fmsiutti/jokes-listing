@@ -15,9 +15,11 @@
                     <MaterialIcon v-else @click="rate(n)" @mouseover="fillRatings(n)" v-for="n in 5" :key="n" :class="{'text-golden': n <= rating}" :icon="n <= rating ? 'grade' : 'star_outline'" />
                 </div>
             </div>
-            <button @click="deleteCard(jokeId)" class="flex ease-linear duration-100 items-center border-main border-2 hover:bg-white hover:text-main hover:scale-110 justify-center absolute right-0 bottom-0 translate-x-[25%] translate-y-[25%] rounded-full bg-main text-white w-10 h-10">
+            <CustomButton @click="deleteCard(jokeId)" type="primary" circle
+                class=" absolute right-0 bottom-0 translate-x-[25%] translate-y-[25%] text-white"
+                >
                 <MaterialIcon icon="delete" />
-            </button>
+            </CustomButton>
         </div>
     </div>
 </template>
@@ -43,6 +45,7 @@
 <script>
 
 import MaterialIcon from '@/components/MaterialIcon.vue';
+import CustomButton from '@/components/CustomButton.vue';
 
 export default {
     name: 'JokesSingle',
@@ -54,7 +57,8 @@ export default {
         }
     },
     components: {
-        MaterialIcon
+        MaterialIcon,
+        CustomButton
     },
     props: {
         setup: { type: String, required: true },

@@ -56,6 +56,9 @@ export default {
         },
         addToDeletedJokes(state: State, id: number) {
             state.deletedJokes.push(id)
+        },
+        addNewJoke(state: State, joke: Joke) {
+            state.jokesList.unshift(joke)
         }
     },
     actions: {
@@ -103,6 +106,9 @@ export default {
         },
         addToDeletedJokes({ commit} : Store, id: number) {
             commit('addToDeletedJokes', id)
+        },
+        addNewJoke({ commit} : Store, joke: Joke) {
+            commit('addNewJoke', joke)
         }
     },
     getters: {
