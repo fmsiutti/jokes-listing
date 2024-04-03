@@ -1,6 +1,6 @@
 
 <template>
-  <div class="absolute sm:relative flex justify-end w-full pt-6 pr-6 dark:bg-primary bg-white ease-linear duration-100">
+  <div class="absolute z-10 sm:relative flex justify-end w-full pt-6 pr-6 dark:bg-primary bg-white ease-linear duration-100">
     <CustomButton @click="toggleJokeForm" type="primary" size="md" >
       Submit your own Joke
     </CustomButton>
