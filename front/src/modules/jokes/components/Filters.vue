@@ -18,9 +18,6 @@
     components: {
         FilterButton,
     },
-    props: {
-        handleSelectCategory: { type: Function, required: true },
-    },
     computed: {},
     mounted() {},
   }

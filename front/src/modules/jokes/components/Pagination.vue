@@ -34,9 +34,6 @@ export default {
         PageButton,
         MaterialIcon
     },
-    props: {
-        pagesCount: { type: Number, required: true },
-    },
     computed: {
         maxVisibleButtons() {
             let width = window.innerWidth

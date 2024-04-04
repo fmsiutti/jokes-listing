@@ -1,7 +1,7 @@
 import { createStore } from 'vuex'
-import HomeStore from '../modules/home/store/home.store'
-import JokesStore from '../modules/jokes/store/jokes.store'
-import GlobalStore from './global.store'
+import Home from '../modules/home/store/home.store'
+import Jokes from '../modules/jokes/store/jokes.store'
+import Global from './global.store'
 
 import VuexPersistence from 'vuex-persist';
 // import localForage from 'localforage';
@@ -16,8 +16,8 @@ const store = createStore({
     plugins: [vuexLocal.plugin],
 })
 
-store.registerModule("GlobalStore", GlobalStore)
-store.registerModule("HomeStore", HomeStore)
-store.registerModule("JokesStore", JokesStore)
+store.registerModule("Global", Global)
+store.registerModule("Home", Home)
+store.registerModule("Jokes", Jokes)
 
 export default store
